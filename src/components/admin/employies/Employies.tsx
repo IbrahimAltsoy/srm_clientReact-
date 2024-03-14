@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import API_URL from "../../../config";
 
-const apiUrl = "https://localhost:8080/api/Employies";
-
+const apiUrl = API_URL + "/Employies";
 interface Employee {
   id: number;
   name: string;

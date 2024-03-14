@@ -46,7 +46,7 @@ function SideNav() {
               <i className="right fas fa-angle-left" />
             </p>
           </a>
-          <ul className="nav nav-treeview">
+          {/* <ul className="nav nav-treeview">
             <li className="nav-item">
               <a href="./index.html" className="nav-link active">
                 <i className="far fa-circle nav-icon" />
@@ -54,7 +54,7 @@ function SideNav() {
               </a>
             </li>
           
-          </ul>
+          </ul> */}
         </li>
         <li className="nav-item">
        
@@ -68,7 +68,7 @@ function SideNav() {
         </li>
         <li className="nav-item">
         <Link to="/users" className="nav-link">
-        <i class="fa fa-users" style={{ marginRight: '5px' }}></i>
+        <i className="fa fa-users" style={{ marginRight: '5px' }}></i>
             <p>
                 Users              
             </p>
@@ -78,7 +78,7 @@ function SideNav() {
         </li>
         <li className="nav-item">
         <Link to="/customers" className="nav-link">
-        <i class="fa fa-users" style={{ marginRight: '5px' }}></i>
+        <i className="fa fa-users" style={{ marginRight: '5px' }}></i>
             <p>
                 Customers            
             </p>
@@ -86,7 +86,7 @@ function SideNav() {
         </li>
         <li className="nav-item">
         <Link to="/employies" className="nav-link">
-        <i class="fa fa-users" style={{ marginRight: '5px' }}></i>
+        <i className="fa fa-users" style={{ marginRight: '5px' }}></i>
             <p>
             Employies            
             </p>
@@ -95,7 +95,7 @@ function SideNav() {
         <li className="nav-item">
           <a href="" className="nav-link"> 
          
-          <i class="fa fa-wrench" style={{ marginRight: '5px' }}></i>
+          <i className="fa fa-wrench" style={{ marginRight: '5px' }}></i>
             <p>
                 Settings              
             </p>

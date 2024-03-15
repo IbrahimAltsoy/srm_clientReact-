@@ -75,7 +75,6 @@ const ShowForm = ({ customer }: { customer?: Customer }) => {
     <div>
       <form onSubmit={submitForm}>
         <input type="hidden" value={customer?.id} />{" "}
-        {/* Müşteri ID'sini hidden input ile gönderiyoruz */}
         <div className="row">
           <div className="col-md-4">
             <label>Identity No</label>
@@ -165,7 +164,6 @@ const Customers = () => {
               text: "Müşteri başarıyla silindi.",
               icon: "success",
             });
-            // Silinen müşteriyi listeden kaldırma
             setCustomers(
               customers.filter((customer) => customer.id !== customerId)
             );
@@ -198,7 +196,7 @@ const Customers = () => {
     };
 
     fetchCustomers();
-  }, [currentPage, showForm]); // showForm değiştiğinde de verileri güncelle
+  }, [currentPage, showForm]);
 
   return (
     <div>

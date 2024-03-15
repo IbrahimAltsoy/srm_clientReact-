@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
+import API_URL from "../../../config";
+const apiUrl = API_URL + "/Customers";
 
 const ShowForm = () => {
   const [identityNumber, setIdentityNumber] = useState("");
   const [companyName, setCompanyName] = useState("");
 
   function addCustomer(event) {
-    event.preventDefault(); // Formun otomatik olarak gönderilmesini engeller
+    event.preventDefault();
 
     axios
-      .post("https://localhost:8080/api/Customers", {
+      .post(apiUrl, {
         identityNumber: identityNumber,
         companyName: companyName,
       })

@@ -97,7 +97,6 @@ const ShowForm = ({ employee }: { employee?: Employee }) => {
     <div>
       <form onSubmit={submitForm}>
         <input type="hidden" value={employee?.id} />{" "}
-        {/* Çalışan ID'sini hidden input ile gönderiyoruz */}
         <div className="row">
           <div className="col-md-4">
             <label>Name</label>
@@ -227,7 +226,6 @@ const Employies = () => {
               text: "Çalışan başarıyla silindi.",
               icon: "success",
             });
-            // Silinen müşteriyi listeden kaldırma
             setEmployies(
               employies.filter((employee) => employee.id !== employeeId)
             );
@@ -260,8 +258,7 @@ const Employies = () => {
     };
 
     fetchEmpleyies();
-  }, [currentPage, showForm]); // showForm değiştiğinde de verileri güncelle
-
+  }, [currentPage, showForm]);
   return (
     <div>
       <div className="form-group float-left">
